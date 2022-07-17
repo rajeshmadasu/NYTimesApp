@@ -54,7 +54,7 @@ class MainViewModelTest : BaseUnitTest() {
     @Test
     fun testFetchNews() = runBlocking {
         mockNetworkResponseWithFileContent("fetch_news_success.json", HttpURLConnection.HTTP_OK)
-        viewModel.fetchNews(false)
+        viewModel.fetchNews(false,1)
         Assert.assertNotNull(viewModel.getList())
     }
 
@@ -71,7 +71,7 @@ class MainViewModelTest : BaseUnitTest() {
             "fetch_news_error.json",
             HttpURLConnection.HTTP_SERVER_ERROR
         )
-        viewModel.fetchNews(false)
+        viewModel.fetchNews(false,1)
         viewModel.errorEvent.observeForever {
             Assert.assertEquals(
                 NetworkConstants.NETWORK_ERROR_MESSAGES.SERVICE_UNAVAILABLE,

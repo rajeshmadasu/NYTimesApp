@@ -36,8 +36,8 @@ class DetailViewModelTest : BaseUnitTest() {
     @Test
     fun testUrl() {
         Assert.assertNull(viewModel.getUrl().value)
-        viewModel.setUrl("abc")
-        Assert.assertEquals("abc", viewModel.getUrl().value)
+        viewModel.setUrl("arc")
+        Assert.assertEquals("arc", viewModel.getUrl().value)
     }
 
     @Test
