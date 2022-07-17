@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">NY News App</string>
+    <string name="title_main">NY News App</string>
+
+    <string name="action_ok">OK</string>
+    <string name="something_went_wrong">Something went wrong... Please try again!!! </string>
+    <string name="title_error">Error</string>
+    <string name="today">Today</string>
+    <string name="last_seven_days">Last 7 days</string>
+
+</resources>
